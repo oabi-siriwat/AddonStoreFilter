@@ -40,8 +40,8 @@ These five are submenus. Each one starts with **Show in the store window**, foll
 
 - **Sort by column:** the sort choices, for example Name (ascending), Name (descending), Status (ascending). The current one is checked.
 - **Channel:** All, Stable, Beta, Dev, and External on the Installed tabs.
-- **Enabled/disabled:** All, Enabled, Disabled. On the Available and Updatable tabs, where the store has no such box, the submenu has only Show in the store window.
-- **Include incompatible add-ons:** a check item to include them. On the Installed tabs, where the store has no such box, the submenu has only Show in the store window.
+- **Enabled/disabled:** All, Enabled, Disabled. It filters the installed add-ons, so the store has this box only on the Installed tabs. On the Available and Updatable tabs the submenu has Show in the store window and the line "(Only on the Installed tabs)", which cannot be chosen.
+- **Include incompatible add-ons:** a check item to also list store add-ons that are not compatible with your NVDA but can still be installed. This is not the Installed incompatible add-ons tab, which lists incompatible add-ons already installed. The store has this box only on the Available and Updatable tabs; on the Installed tabs the submenu has Show in the store window and the line "(Only on the Available and Updatable tabs)".
 - **Search:** **Search for...** opens a box to type your search (leave it empty to show all add-ons). **Clear search** appears when a search is active.
 
 The choices work even while the box is hidden, so you can hide a box and still change it from the menu. Choosing one changes the store's own box, so the result is the same as changing it by hand.
@@ -94,6 +94,10 @@ Go to **NVDA Menu, Preferences, Input gestures**, and open the **Add-on store Fi
 When NVDA starts, the add-on quietly checks GitHub for a newer version. If there is one, it asks whether to download and install it. You can also press Check for update in the settings.
 
 ## Changelog
+
+### v1.5
+
+- On tabs where the store has no Enabled/disabled or Include incompatible add-ons box, their submenu now says where the box is: "(Only on the Installed tabs)" or "(Only on the Available and Updatable tabs)".
 
 ### v1.4
 
