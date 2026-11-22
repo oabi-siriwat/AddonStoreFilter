@@ -34,17 +34,24 @@ Like changing tabs the normal way, switching tabs clears the search field.
 
 ## The add-on list's context menu
 
-In the add-on list, open the context menu (Applications key or Shift+F10, or Enter on an add-on). Below the store's own actions for the add-on are seven check items, one for each box in the store window:
+In the add-on list, open the context menu (Applications key or Shift+F10, or Enter on an add-on). Below the store's own actions for the add-on are seven items, one for each box in the store window.
 
-- **Sort by column**
-- **Channel**
-- **Enabled/disabled**
-- **Include incompatible add-ons**
-- **Search**
+These five are submenus. Each one starts with **Show in the store window**, followed by the box's own choices:
+
+- **Sort by column:** the sort choices, for example Name (ascending), Name (descending), Status (ascending). The current one is checked.
+- **Channel:** All, Stable, Beta, Dev, and External on the Installed tabs.
+- **Enabled/disabled:** All, Enabled, Disabled. On the Available and Updatable tabs, where the store has no such box, the submenu has only Show in the store window.
+- **Include incompatible add-ons:** a check item to include them. On the Installed tabs, where the store has no such box, the submenu has only Show in the store window.
+- **Search:** **Search for...** opens a box to type your search (leave it empty to show all add-ons). **Clear search** appears when a search is active.
+
+The choices work even while the box is hidden, so you can hide a box and still change it from the menu. Choosing one changes the store's own box, so the result is the same as changing it by hand.
+
+These two are plain check items, because they have no choices:
+
 - **Description:** the description box in the details on the right.
 - **Other Details:** the box below it with the publisher, ID, links, license and the other details.
 
-Checked means the box is shown in the store window, as usual. Choose an item to uncheck it, and the box disappears, so Tab skips it. Choose it again to bring the box back. NVDA says, for example, "Search hidden" or "Search shown", and the focus goes back to the list. All seven are checked at first.
+For every box, checked means it is shown in the store window, as usual. Uncheck it, and the box disappears, so Tab skips it. Check it again to bring the box back. NVDA says, for example, "Search hidden" or "Search shown", and the focus goes back to the list. All seven are shown at first.
 
 After a separator comes **Wrap around tabs**. Unchecked (the default), Left and Right Arrow stop at the first and last tab. Checked, they go round from the last tab to the first and back.
 
@@ -87,6 +94,10 @@ Go to **NVDA Menu, Preferences, Input gestures**, and open the **Add-on store Fi
 When NVDA starts, the add-on quietly checks GitHub for a newer version. If there is one, it asks whether to download and install it. You can also press Check for update in the settings.
 
 ## Changelog
+
+### v1.4
+
+- In the add-on list's context menu, Sort by column, Channel, Enabled/disabled, Include incompatible add-ons and Search are now submenus. Each has "Show in the store window" and the box's own choices, for example Name (ascending) or Stable, so you can sort, filter and search from the menu, even with the box hidden.
 
 ### v1.3
 
